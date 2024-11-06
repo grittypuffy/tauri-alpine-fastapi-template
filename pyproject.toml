@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi-tauri-sidecar"
+version = "0.1.0"
+description = "FastAPI Tauri sidecar"
+authors = ["example <me@example.com>"]
+license = "SPDX:AGPL"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyinstaller = {version = "^6.11.0", python = ">=3.12,<3.14"}
+colorama = "^0.4.6"
+fastapi = {version = "^0.115.2", extras = ["standard"] }
+uvicorn = "^0.32.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
